@@ -1,0 +1,172 @@
+:root{
+    --bcol1: #222;
+    --bcol2: #e32;
+    --navcol: #1ad1ff;
+    --fontcol: #fff;
+  }
+  
+  * {
+    font-family: Verdana;
+  }
+  
+  html{
+    margin: 0;
+  }
+  
+  header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      min-height: 65px;
+      display: flex;
+      justify-content: flex-end;
+      background-color: var(--navcol);
+      border-bottom: 3px solid #000;
+    }
+  
+  @media (max-width: 400px){
+    ul{
+      flex-direction: column;
+    }
+  }
+  
+  .nav-link {
+      color: var(--fontcol);
+      text-decoration: none;
+      font-size: 150%;
+    }
+  
+    ul {
+      display: flex;
+      overflow: wrap-around;
+  
+    }
+  
+    li {
+      list-style: none;
+      margin: 1em;
+    }
+  
+    li:nth-of-type(4){
+      margin-right: 20px;
+    }
+  
+  .nav-items a:hover {
+    color: #000;
+  }
+  
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bcol1);
+    color: var(--fontcol);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    left: 0;
+    right: 0;
+    margin: 0 -18;
+  }
+  
+  .welcomep{
+    color: var(--navcol);
+    font-size: 1.2rem
+  }
+  
+  .welcome-h1{
+    margin-top: 90px;
+    margin-bottom: -40px;
+    font-size: 300%;
+  }
+  
+  #projects{
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #projects, #music{  margin: 0 -18;
+  }
+  
+  .projects-h1{
+    margin: 30px auto;
+    font-size: 200%;
+    color: #333;
+  }
+  
+  .pdiv {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-gap: 4rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+  
+  .project-img{
+    width: 500px;
+    height: 261px;
+    border: 2px solid var(--bcol1);
+  }
+  
+  .project-img:hover{
+    width: 32.5em;
+  }
+  
+  .project-tile{
+    text-decoration: none;
+  }
+  
+  .project-p{
+    color: #333;
+  
+    margin: 10px 70px;
+  
+  }
+  
+  #music{
+    background-color: var(--bcol2);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  
+  .music-h1{
+    font-size: 200%;
+    margin: 40px auto;
+    padding-top: 20px;
+    color: white;
+  }
+  
+  iframe{
+    padding: 20px;
+  }
+  
+  #contact{
+    background-color: var(--bcol1);
+    height: 160px;
+    margin: 0 -18;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .contact-h1{
+    color: white;
+    margin-top: 60px;
+  
+  }
+  
+  #contact i, #contact p{
+    color: white;
+    margin: 40px 20px -20px 20px;
+    font-size: 140%;
+    padding: 30px 20px -10px 20px;
+  }
+  
+  #contact a{
+    text-decoration: none;
+  }
